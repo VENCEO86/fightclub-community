@@ -1,0 +1,1108 @@
+        }
+
+        /* Content Header */
+        .content-header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .board-title {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .board-description {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .view-options {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .view-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .view-btn.active, .view-btn:hover {
+            background: white;
+            color: #2c3e50;
+        }
+
+        /* Controls */
+        .controls {
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .sort-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .sort-select, .posts-per-page {
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .write-btn {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .write-btn:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        /* Post List */
+        .post-list {
+            background: white;
+        }
+
+        .post-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .post-list th {
+            background: #f8f9fa;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid #e9ecef;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .post-list td {
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: middle;
+        }
+
+        .post-list tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .post-title {
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .post-title:hover {
+            color: #e74c3c;
+        }
+
+        .comment-count {
+            background: #e74c3c;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+
+        .hot-icon {
+            color: #ff6b6b;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Card View */
+        .card-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .post-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .card-title:hover {
+            color: #e74c3c;
+        }
+
+        .card-content {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        /* Gallery View */
+        .gallery-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #ccc;
+        }
+
+        .gallery-content {
+            padding: 15px;
+        }
+
+        .gallery-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95rem;
+        }
+
+        .gallery-title:hover {
+            color: #e74c3c;
+        }
+
+        /* Sidebar Widgets */
+        .widget {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .widget-header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            font-weight: 600;
+        }
+
+        .widget-content {
+            padding: 20px;
+        }
+
+        .popular-post {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .popular-post:last-child {
+            border-bottom: none;
+        }
+
+        .popular-post:hover {
+            color: #e74c3c;
+        }
+
+        .post-rank {
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .popular-post-title {
+            flex: 1;
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+
+        /* Ads */
+        .ad-banner {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .ad-banner h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .ad-banner p {
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .ad-btn {
+            background: white;
+            color: #667eea;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .ad-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            gap: 5px;
+        }
+
+        .page-btn {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .page-btn:hover, .page-btn.active {
+            background: #e74c3c;
+            color: white;
+            border-color: #e74c3c;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: white;
+            margin: 5% auto;
+            padding: 0;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .modal-header {
+            background: #e74c3c;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close:hover {
+            opacity: 0.7;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: vertical;
+        }
+
+        .form-group textarea {
+            min-height: 200px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #c0392b;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #545b62;
+        }
+
+        /* Online Indicator */
+        .online-indicator {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2ecc71;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .online-dot {
+            width: 8px;
+            height: 8px;
+            background: #27ae60;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        /* Loading animation */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 50px;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .loading::after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #e74c3c;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: #2ecc71;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 4000;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .toast.error {
+            background: #e74c3c;
+        }
+
+        .toast.warning {
+            background: #f39c12;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav-menu {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .search-container {
+                width: 100%;
+                margin: 0;
+            }
+            
+            .search-box {
+                width: 100%;
+            }
+            
+            .content-header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 15px;
+            }
+            
+            .card-view {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-view {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            
+            .main-container {
+                margin: 10px auto;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-fist-raised"></i>
+                파이트클럽
+            </a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" onclick="loadBoard('best')"><i class="fas fa-star"></i> 베스트</a></li>
+                    <li><a href="#" onclick="loadBoard('politics')"><i class="fas fa-vote-yea"></i> 정치</a></li>
+                    <li><a href="#" onclick="loadBoard('issue')"><i class="fas fa-exclamation-circle"></i> 이슈</a></li>
+                    <li><a href="#" onclick="loadBoard('society')"><i class="fas fa-users"></i> 사회</a></li>
+                    <li><a href="#" onclick="loadBoard('celeb')"><i class="fas fa-star"></i> 연예</a></li>
+                    <li><a href="#" onclick="loadBoard('stock')"><i class="fas fa-chart-line"></i> 주식</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="검색어를 입력하세요..." onkeypress="handleSearch(event)">
+                <button class="search-btn" onclick="performSearch()"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="user-menu">
+                <button class="btn btn-primary" onclick="showLoginModal()">로그인</button>
+                <button class="btn btn-secondary"><i class="fas fa-cog"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Content Header -->
+            <div class="content-header">
+                <div>
+                    <h1 class="board-title">일간 베스트</h1>
+                    <p class="board-description">가장 인기있는 게시글들을 확인하세요</p>
+                </div>
+                <div class="view-options">
+                    <button class="view-btn active" onclick="changeView('list')">
+                        <i class="fas fa-list"></i> 리스트
+                    </button>
+                    <button class="view-btn" onclick="changeView('card')">
+                        <i class="fas fa-th-large"></i> 카드
+                    </button>
+                    <button class="view-btn" onclick="changeView('gallery')">
+                        <i class="fas fa-images"></i> 갤러리
+                    </button>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <div class="sort-controls">
+                    <select class="sort-select" onchange="sortPosts(this.value)">
+                        <option value="latest">최신순</option>
+                        <option value="popular">인기순</option>
+                        <option value="views">조회순</option>
+                        <option value="comments">댓글순</option>
+                    </select>
+                    <select class="posts-per-page" onchange="changePostsPerPage(this.value)">
+                        <option value="30">30개씩</option>
+                        <option value="40">40개씩</option>
+                        <option value="60">60개씩</option>
+                    </select>
+                </div>
+                <button class="write-btn" onclick="showWriteModal()">
+                    <i class="fas fa-edit"></i> 글쓰기
+                </button>
+            </div>
+
+            <!-- Post List -->
+            <div id="post-container">
+                <div class="post-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="60">번호</th>
+                                <th>제목</th>
+                                <th width="100">작성자</th>
+                                <th width="80">조회</th>
+                                <th width="60">추천</th>
+                                <th width="120">작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody id="posts-tbody">
+                            <!-- Posts will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <a href="#" class="page-btn">&lt;</a>
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn">&gt;</a>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Board Navigation -->
+            <div class="board-nav">
+                <h3><i class="fas fa-list"></i> 게시판 목록</h3>
+                <ul class="board-list">
+                    <li><a href="#" class="active" onclick="loadBoard('best')">일간-베스트</a></li>
+                    <li><a href="#" onclick="loadBoard('politics')">정치</a></li>
+                    <li><a href="#" onclick="loadBoard('issue')">이슈</a></li>
+                    <li><a href="#" onclick="loadBoard('society')">사회</a></li>
+                    <li><a href="#" onclick="loadBoard('celeb')">걸그룹/연예인</a></li>
+                    <li><a href="#" onclick="loadBoard('stock')">주식</a></li>
+                </ul>
+            </div>
+
+            <!-- Popular Posts -->
+            <div class="widget">
+                <div class="widget-header">
+                    <i class="fas fa-fire"></i> 인기 게시글
+                </div>
+                <div class="widget-content" id="popular-posts">
+                    <a href="#" class="popular-post">
+                        <span class="post-rank">1</span>
+                        <span class="popular-post-title">인기 게시글 제목 1</span>
+                    </a>
+                    <a href="#" class="popular-post">
+                        <span class="post-rank">2</span>
+                        <span class="popular-post-title">인기 게시글 제목 2</span>
+                    </a>
+                    <a href="#" class="popular-post">
+                        <span class="post-rank">3</span>
+                        <span class="popular-post-title">인기 게시글 제목 3</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ad Banner -->
+            <div class="ad-banner">
+                <h3>프리미엄 광고</h3>
+                <p>여기에 광고가 표시됩니다</p>
+                <button class="ad-btn">자세히 보기</button>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="widget">
+                <div class="widget-header">
+                    <i class="fas fa-clock"></i> 최근 게시글
+                </div>
+                <div class="widget-content" id="recent-posts">
+                    <a href="#" class="popular-post">
+                        <span class="post-rank">1</span>
+                        <span class="popular-post-title">최근 게시글 제목 1</span>
+                    </a>
+                    <a href="#" class="popular-post">
+                        <span class="post-rank">2</span>
+                        <span class="popular-post-title">최근 게시글 제목 2</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>로그인</h2>
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">아이디</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">비밀번호</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="remember"> 자동 로그인
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal('loginModal')">취소</button>
+                        <button type="submit" class="btn btn-primary">로그인</button>
+                    </div>
+                </form>
+                <p style="margin-top: 20px; text-align: center;">
+                    <a href="#" onclick="showRegisterModal()">회원가입</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Write Post Modal -->
+    <div id="writeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>글쓰기</h2>
+                <span class="close" onclick="closeModal('writeModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="writeForm">
+                    <div class="form-group">
+                        <label for="post_category">카테고리</label>
+                        <select id="post_category" name="category" required>
+                            <option value="">카테고리 선택</option>
+                            <option value="best">일간-베스트</option>
+                            <option value="politics">정치</option>
+                            <option value="issue">이슈</option>
+                            <option value="society">사회</option>
+                            <option value="celeb">연예</option>
+                            <option value="stock">주식</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="post_title">제목</label>
+                        <input type="text" id="post_title" name="title" required maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="post_content">내용</label>
+                        <textarea id="post_content" name="content" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="post_files">첨부파일</label>
+                        <input type="file" id="post_files" name="files[]" multiple accept="image/*,video/*,.pdf,.doc,.docx">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal('writeModal')">취소</button>
+                        <button type="submit" class="btn btn-primary">등록</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Online Indicator -->
+    <div class="online-indicator">
+        <span class="online-dot"></span>
+        접속자 <span id="online-count">127</span>명
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script>
+        // Global Variables
+        let currentBoard = 'best';
+        let currentView = 'list';
+        let currentPage = 1;
+        let postsPerPage = 30;
+        let sortBy = 'latest';
+        let isLoggedIn = false;
+        let currentUser = null;
+        let posts = [];
+
+        // API Base URL
+        const API_BASE_URL = window.location.origin + '/api';
+
+        // Sample data for demonstration
+        function generateSampleData() {
+            const sampleTitles = [
+                "정부 새 정책 발표, 시민들 반응은?",
+                "경제 전망 밝아져... 주식시장 상승세", 
+                "새로운 K-POP 그룹 데뷔 소식",
+                "최신 IT 기술 트렌드 분석",
+                "스포츠 경기 하이라이트"
+            ];
+
+            const authors = ['김철수', '이영희', '박민수', '정수연', '최영준'];
+
+            posts = [];
+            for (let i = 1; i <= 50; i++) {
+                const randomTitle = sampleTitles[Math.floor(Math.random() * sampleTitles.length)];
+                const randomAuthor = authors[Math.floor(Math.random() * authors.length)];
+                
+                posts.push({
+                    id: i,
+                    title: `${randomTitle} ${i}`,
+                    author: randomAuthor,
+                    views: Math.floor(Math.random() * 1000) + 50,
+                    likes: Math.floor(Math.random() * 100) + 5,
+                    comments: Math.floor(Math.random() * 50) + 1,
+                    date: new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000),
+                    isHot: Math.random() > 0.8
+                });
+            }
+        }
+
+        // Initialize app
+        document.addEventListener('DOMContentLoaded', function() {
+            generateSampleData();
+            loadPosts();
+            updateOnlineCount();
+            
+            setInterval(updateOnlineCount, 30000);
+        });
+
+        // Load posts
+        function loadPosts() {
+            showLoading();
+            
+            setTimeout(() => {
+                let filteredPosts = posts.filter(post => 
+                    currentBoard === 'best' || post.category === currentBoard
+                );
+
+                // Apply sorting
+                switch(sortBy) {
+                    case 'popular':
+                        filteredPosts.sort((a, b) => b.likes - a.likes);
+                        break;
+                    case 'views':
+                        filteredPosts.sort((a, b) => b.views - a.views);
+                        break;
+                    case 'comments':
+                        filteredPosts.sort((a, b) => b.comments - a.comments);
+                        break;
+                    default: // latest
+                        filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                }
+
+                // Pagination
+                const startIndex = (currentPage - 1) * pos<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파이트클럽 커뮤니티</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-menu li {
+            position: relative;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .nav-menu a:hover {
+            background-color: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .user-menu {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .search-container {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        .search-box {
+            padding: 8px 40px 8px 15px;
+            border: none;
+            border-radius: 25px;
+            width: 250px;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #e74c3c;
+            cursor: pointer;
+        }
+
+        /* Main Layout */
+        .main-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Board Categories */
+        .board-nav {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .board-nav h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+
+        .board-list {
+            list-style: none;
+        }
+
+        .board-list li {
+            margin-bottom: 8px;
+        }
+
+        .board-list a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            border-radius: 5px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .board-list a:hover, .board-list a.active {
+            background-color: #e74c3c;
+            color: white;
+            transform: translateX(5px);
